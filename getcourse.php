@@ -16,7 +16,7 @@ http_response_code(200);
 
 // Авторизационные данные
 
-$token = "q6lYgUcGt0SCXuqzKHb0DSkw8ZPhTMcQC4UUZxhC7W6q2lzTyZjaNX7VDTwB";
+$token = "-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-";  // Здесь, внутри кавычек, вместо этих красивых полосок необходимо указать токен Вашего проекта Smart Sender
 
 // functions
 function send_forward($inputJSON, $link){
