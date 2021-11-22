@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 	$result["state"] = false;
 	$result["message"] = "Method not Allowed. Please, use POST";
 	echo json_encode($result);
-	send_forward(json_encode($log), $link."?methot=notAllowed");
+	send_forward(json_encode($result), $link."?methot=notAllowed");
 	exit;
 }
 
@@ -74,6 +74,7 @@ if ($_GET["ssId"] == NULL) {
     $result["message"]["account"] = "ssId is missing";
     http_response_code(422);
     echo json_encode($result);
+    send_forward(json_encode($result), $link);
     exit;
 }
 
