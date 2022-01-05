@@ -144,6 +144,7 @@ if (is_array($_GET["variables"]) === true) {
     $result["update"] = $updateUser;
 }
 send_forward(json_encode($result), $link);
+echo json_encode($result);
 
 
 
